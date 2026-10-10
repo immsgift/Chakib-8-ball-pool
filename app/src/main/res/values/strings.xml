@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pool Aim Tool</string>
+    <string name="overlay_service_name">Aim Overlay Service</string>
+    <string name="overlay_notification_title">Aiming Overlay Active</string>
+    <string name="overlay_notification_desc">Guidelines are projected on screen. Tap to configure.</string>
+    <string name="action_stop_overlay">Stop Overlay</string>
+    <string name="action_start_overlay">Start Aim Overlay</string>
+    <string name="permission_required_title">Overlay Permission Required</string>
+    <string name="permission_required_desc">To draw precision aiming guidelines over games, enable \"Display over other apps\" for Pool Aim Tool.</string>
+    <string name="grant_permission_button">Grant Overlay Permission</string>
+</resources>

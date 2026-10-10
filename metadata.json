@@ -1,0 +1,6 @@
+{
+  "name": "Pool Aim Tool",
+  "description": "8 Ball Pool aiming overlay guideline tool with draggable ball target circles, 360-degree angle control, and pocket deflection trajectories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
