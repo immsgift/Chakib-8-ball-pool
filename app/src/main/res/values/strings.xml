@@ -1,11 +1,13 @@
 <resources>
-    <string name="app_name">Pool Aim Tool</string>
-    <string name="overlay_service_name">Aim Overlay Service</string>
-    <string name="overlay_notification_title">Aiming Overlay Active</string>
-    <string name="overlay_notification_desc">Guidelines are projected on screen. Tap to configure.</string>
-    <string name="action_stop_overlay">Stop Overlay</string>
-    <string name="action_start_overlay">Start Aim Overlay</string>
-    <string name="permission_required_title">Overlay Permission Required</string>
-    <string name="permission_required_desc">To draw precision aiming guidelines over games, enable \"Display over other apps\" for Pool Aim Tool.</string>
-    <string name="grant_permission_button">Grant Overlay Permission</string>
+    <string name="app_name">Chakib Aiming Wheel Biliardo</string>
+    <string name="overlay_service_name">Chakib Aiming Wheel Service</string>
+    <string name="overlay_notification_title">Chakib Aiming Wheel Biliardo</string>
+    <string name="overlay_notification_desc">المساعد نشط فوق 8 Ball Pool. اضغط للتحكم.</string>
+    <string name="action_stop_overlay">إيقاف المساعد</string>
+    <string name="action_start_overlay">تشغيل المساعد العائم</string>
+    <string name="permission_required_title">إذن الظهور فوق التطبيقات مطلوب</string>
+    <string name="permission_required_desc">لتشغيل دائرة التصويب وخطوط الحفر فوق لعبة 8 Ball Pool، يرجى تفعيل إذن الظهور فوق التطبيقات.</string>
+    <string name="grant_permission_button">منح إذن الظهور</string>
+    <string name="accessibility_desc">مساعد خطوط الرماية وحفر الطاولة بدون تجميد اللمس للعبة 8 Ball Pool</string>
+    <string name="accessibility_title">خدمة إمكانية الوصول لـ Chakib Aiming Wheel</string>
 </resources>

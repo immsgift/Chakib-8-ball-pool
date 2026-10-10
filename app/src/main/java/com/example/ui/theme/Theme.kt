@@ -48,9 +48,9 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun MyApplicationTheme(
+fun BilliardsTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = false, // Keep consistent billiard theme
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
@@ -59,7 +59,7 @@ fun MyApplicationTheme(
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
         darkTheme -> DarkColorScheme
-        else -> DarkColorScheme // Billiard styling looks best in rich dark
+        else -> DarkColorScheme
     }
 
     MaterialTheme(
@@ -68,3 +68,13 @@ fun MyApplicationTheme(
         content = content
     )
 }
+
+@Composable
+fun MyApplicationTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    dynamicColor: Boolean = false,
+    content: @Composable () -> Unit
+) {
+    BilliardsTheme(darkTheme = darkTheme, dynamicColor = dynamicColor, content = content)
+}
+

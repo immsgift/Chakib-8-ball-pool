@@ -17,7 +17,7 @@ class ExampleRobolectricTest {
   fun `read string from context`() {
     val context = ApplicationProvider.getApplicationContext<Context>()
     val appName = context.getString(R.string.app_name)
-    assertEquals("Pool Aim Tool", appName)
+    assertEquals("Chakib Aiming Wheel Biliardo", appName)
   }
 
   @Test
@@ -27,34 +27,33 @@ class ExampleRobolectricTest {
       ballRadiusDp = 35f,
       lineColor = 0xFF00E5FF.toInt(),
       showRebound = true,
-      reboundCount = 2,
-      showTangent = true
+      reboundCount = 2
     )
     AimOverlayConfig.save(context, customConfig)
     val loaded = AimOverlayConfig.load(context)
 
-    assertEquals(35f, loaded.ballRadiusDp)
+    assertEquals(35f, loaded.ballRadiusDp, 0.01f)
     assertEquals(0xFF00E5FF.toInt(), loaded.lineColor)
     assertTrue(loaded.showRebound)
     assertEquals(2, loaded.reboundCount)
-    assertTrue(loaded.showTangent)
   }
 
   @Test
   fun `table calibration persistence test`() {
     val context = ApplicationProvider.getApplicationContext<Context>()
     val sampleTable = CalibratedTable(
-      tlX = 0.05f, tlY = 0.15f,
-      trX = 0.95f, trY = 0.15f,
-      brX = 0.95f, brY = 0.85f,
-      blX = 0.05f, blY = 0.85f,
+      leftRatio = 0.05f,
+      topRatio = 0.15f,
+      rightRatio = 0.95f,
+      bottomRatio = 0.85f,
+      isLandscape = true,
       isCalibrated = true
     )
     AimOverlayConfig.saveCalibration(context, sampleTable)
     val loadedTable = AimOverlayConfig.loadCalibration(context)
 
-    assertEquals(0.05f, loadedTable.tlX, 0.001f)
-    assertEquals(0.95f, loadedTable.trX, 0.001f)
+    assertEquals(0.05f, loadedTable.leftRatio, 0.001f)
+    assertEquals(0.95f, loadedTable.rightRatio, 0.001f)
     assertTrue(loadedTable.isCalibrated)
   }
 }

@@ -37,6 +37,20 @@
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
                 android:value="Aiming guideline overlay tool" />
         </service>
+
+        <!-- Trusted Accessibility Service: Uses TYPE_ACCESSIBILITY_OVERLAY to prevent Android 12+ and 8 Ball Pool untrusted touch blocking -->
+        <service
+            android:name=".AimAccessibilityService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
     </application>
 
 </manifest>

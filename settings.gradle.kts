@@ -22,6 +22,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "Pool Aim Tool"
+rootProject.name = "Chakib Aiming Wheel Biliardo"
 
 include(":app")

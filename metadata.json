@@ -1,6 +1,6 @@
 {
-  "name": "Pool Aim Tool",
-  "description": "8 Ball Pool aiming overlay guideline tool with draggable ball target circles, 360-degree angle control, and pocket deflection trajectories.",
+  "name": "Chakib Aiming Wheel Biliardo",
+  "description": "8 Ball Pool aiming overlay guideline tool with single target wheel, 6 pocket laser trajectories, landscape calibration, and touch pass-through for shooting.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
